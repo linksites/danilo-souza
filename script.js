@@ -1,66 +1,48 @@
-const menuToggle = document.getElementById('menu-toggle');
-const menu = document.getElementById('menu');
+const body = document.body;
+const themeToggle = document.getElementById('themeToggle');
+const menuToggle = document.getElementById('menuToggle');
+const nav = document.getElementById('nav');
 const year = document.getElementById('year');
-const themeToggle = document.getElementById('theme-toggle');
-const root = document.documentElement;
-const themeColorMeta = document.querySelector('meta[name="theme-color"]');
-const THEME_STORAGE_KEY = 'danilo-souza-theme';
+const siteHeader = document.querySelector('.site-header');
+
+const savedTheme = localStorage.getItem('danilo-theme');
+if (savedTheme === 'light') {
+  body.classList.remove('dark');
+} else {
+  body.classList.add('dark');
+}
+
+const updateThemeMeta = () => {
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+  if (metaTheme) {
+    metaTheme.setAttribute('content', body.classList.contains('dark') ? '#0d171b' : '#f4f7f8');
+  }
+};
+updateThemeMeta();
+
+themeToggle?.addEventListener('click', () => {
+  body.classList.toggle('dark');
+  localStorage.setItem('danilo-theme', body.classList.contains('dark') ? 'dark' : 'light');
+  updateThemeMeta();
+});
+
+menuToggle?.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
+});
+
+nav?.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+  });
+});
+
+window.addEventListener('scroll', () => {
+  if (!siteHeader) return;
+  siteHeader.classList.toggle('scrolled', window.scrollY > 16);
+});
 
 if (year) {
   year.textContent = new Date().getFullYear();
-}
-
-function applyTheme(theme) {
-  root.setAttribute('data-theme', theme);
-
-  if (themeToggle) {
-    const isDark = theme === 'dark';
-    themeToggle.textContent = isDark ? 'Tema claro' : 'Tema escuro';
-    themeToggle.setAttribute('aria-pressed', String(isDark));
-  }
-
-  if (themeColorMeta) {
-    themeColorMeta.setAttribute('content', theme === 'dark' ? '#000000' : '#4f6770');
-  }
-}
-
-if (themeToggle) {
-  let storedTheme = null;
-
-  try {
-    storedTheme = localStorage.getItem(THEME_STORAGE_KEY);
-  } catch (_) {
-    storedTheme = null;
-  }
-
-  const initialTheme = storedTheme === 'dark' || storedTheme === 'light'
-    ? storedTheme
-    : 'dark';
-
-  applyTheme(initialTheme);
-
-  themeToggle.addEventListener('click', () => {
-    const nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    applyTheme(nextTheme);
-
-    try {
-      localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
-    } catch (_) {
-      // Ignore storage errors in private or restricted contexts.
-    }
-  });
-}
-
-if (menuToggle && menu) {
-  menuToggle.addEventListener('click', () => {
-    const isOpen = menu.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', String(isOpen));
-  });
-
-  menu.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      menu.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-    });
-  });
 }

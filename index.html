@@ -1,246 +1,372 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Danilo Souza Psicólogo em Belém do Pará. Atendimento clínico presencial e on-line com escuta acolhedora e foco em saúde emocional, autoconhecimento e qualidade de vida." />
-  <meta name="theme-color" content="#000000" />
   <title>Danilo Souza | Psicólogo em Belém do Pará</title>
+  <meta name="description" content="Danilo Souza é psicólogo clínico em Belém do Pará, com atendimento psicológico on-line e presencial. Atuação em dependência química, TCC, TEA, TGD, ABA, ansiedade, autoestima e desenvolvimento humano." />
+  <meta name="keywords" content="psicólogo em Belém do Pará, psicólogo Belém, atendimento psicológico em Belém, dependência química, terapia cognitivo-comportamental, TCC, TEA, TGD, ABA, Danilo Souza psicólogo" />
+  <meta name="author" content="Danilo Souza" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0d171b" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Danilo Souza | Psicólogo em Belém do Pará" />
+  <meta property="og:description" content="Atendimento psicológico on-line e presencial em Belém do Pará, com escuta qualificada, ética e seriedade clínica." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo-danilo-souza.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Danilo Souza | Psicólogo em Belém do Pará" />
+  <meta name="twitter:description" content="Psicólogo clínico em Belém do Pará com destaque para dependência química, TCC, TEA, TGD e ABA." />
+  <meta name="twitter:image" content="assets/logo-danilo-souza.jpg" />
+  <link rel="icon" type="image/png" href="assets/logo-danilo-souza.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Psychologist",
+    "name": "Danilo Souza",
+    "image": "assets/logo-danilo-souza.jpg",
+    "description": "Psicólogo clínico em Belém do Pará com atendimento on-line e presencial, atuando em dependência química, TCC, TEA, TGD e ABA.",
+    "telephone": "+55 91 98486-4748",
+    "email": "mailto:Danilosouzapsi@gmail.com",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Tv. Barão do Triunfo, 3540A - Ed. Infinity Corp. 11º andar, sala 1115",
+        "addressLocality": "Belém",
+        "addressRegion": "PA",
+        "addressCountry": "BR"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Comandante Brás de Aguiar, 936 - Alameda Dr. Feliciano Mendonça, casa 2 e 4 - sala",
+        "addressLocality": "Belém",
+        "addressRegion": "PA",
+        "addressCountry": "BR"
+      }
+    ],
+    "areaServed": "Belém do Pará",
+    "sameAs": [
+      "https://instagram.com/danilo_souzac_x"
+    ]
+  }
+  </script>
 </head>
-<body>
-  <header class="header" id="topo">
-    <div class="container nav-wrapper">
-      <a href="#topo" class="brand" aria-label="Página inicial Danilo Souza">
-        <img src="assets/logo.jpeg" alt="Logomarca Danilo Souza Psicólogo" class="brand-logo" />
-        <span class="brand-text">
+<body class="dark">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" id="topo">
+    <div class="container nav-wrap">
+      <a href="#inicio" class="brand" aria-label="Danilo Souza - início do site">
+        <img src="assets/logo-danilo-souza.jpg" alt="Logomarca Danilo Souza Psicólogo" class="brand-logo" />
+        <div>
           <strong>Danilo Souza</strong>
-          <small>Psicólogo clínico</small>
-        </span>
+          <span>Psicólogo Clínico</span>
+        </div>
       </a>
 
-      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="nav" id="menu">
+      <nav class="nav" id="nav">
+        <a href="#inicio">Início</a>
         <a href="#sobre">Sobre</a>
+        <a href="#especialidades">Especialidades</a>
         <a href="#abordagem">Abordagem</a>
-        <a href="#temas">Temas</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#dependencia">Dependência Química</a>
+        <a href="#artigos">Artigos</a>
+        <a href="#enderecos">Endereços</a>
         <a href="#contato">Contato</a>
       </nav>
 
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
-        Tema escuro
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+          <span class="theme-icon theme-icon-sun">☀</span>
+          <span class="theme-icon theme-icon-moon">☾</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-breath hero-breath-1" aria-hidden="true"></div>
+      <div class="hero-breath hero-breath-2" aria-hidden="true"></div>
+      <div class="hero-breath hero-breath-3" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">Psicólogo em Belém do Pará • atendimento on-line e presencial</span>
-          <h1>Cuidado psicológico com seriedade, acolhimento e escuta qualificada.</h1>
+          <span class="eyebrow">Atendimento on-line e presencial em Belém do Pará</span>
+          <h1>Psicólogo em Belém do Pará com escuta qualificada, cuidado ético e acompanhamento sério.</h1>
           <p>
-            Danilo Matheus Fonseca de Souza oferece atendimento clínico com abordagem centrada no entendimento das emoções,
-            dos pensamentos e dos comportamentos, ajudando o paciente a construir mais equilíbrio, clareza e qualidade de vida.
+            Danilo Souza realiza atendimento psicológico com foco clínico, sensibilidade humana e estrutura terapêutica personalizada,
+            respeitando a singularidade de cada paciente e os desafios reais da vida contemporânea.
           </p>
 
-          <div class="credentials">
-            <div>
-              <strong>CRP</strong>
-              <span>10/11505</span>
-            </div>
-            <div>
-              <strong>Pós-graduações</strong>
-              <span>TEA/TGD e ABA aplicada ao autismo</span>
-            </div>
-            <div>
-              <strong>Atuação</strong>
-              <span>Belém do Pará • atendimento on-line e presencial</span>
-            </div>
+          <div class="hero-badges">
+            <span>CRP-10/11505</span>
+            <span>Terapia Cognitivo-Comportamental</span>
+            <span>Dependência Química</span>
+            <span>Atendimento on-line e presencial</span>
           </div>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/5591984864748" target="_blank" rel="noopener noreferrer">Agendar atendimento</a>
-            <a class="btn btn-secondary" href="https://www.instagram.com/Danilo_souzac_x" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a class="btn btn-secondary" href="#contato">Ver contatos</a>
+            <a class="btn btn-primary" href="https://wa.me/5591984864748?text=Olá%2C%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">Agendar pelo WhatsApp</a>
+            <a class="btn btn-secondary" href="#especialidades">Ver especialidades</a>
           </div>
         </div>
 
         <div class="hero-card">
-          <img src="assets/card-front.jpeg" alt="Cartão profissional Danilo Souza Psicólogo" />
+          <img src="assets/logo-danilo-souza.jpg" alt="Logomarca Danilo Souza" class="hero-logo" />
+          <div class="hero-card-text">
+            <h2>Danilo Souza</h2>
+            <p>Psicólogo Clínico</p>
+            <ul>
+              <li>Atendimento on-line</li>
+              <li>Atendimento presencial em Belém</li>
+              <li>Ênfase clínica em dependência química</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="sobre">
-      <div class="container two-columns">
+      <div class="container two-col">
         <div>
-          <span class="section-tag">Sobre o atendimento</span>
-          <h2>Um espaço seguro para compreender emoções, conflitos e padrões de comportamento.</h2>
+          <span class="section-tag">Sobre o profissional</span>
+          <h2>Um espaço terapêutico seguro, ético e acolhedor.</h2>
           <p>
-            O acompanhamento psicológico pode auxiliar pessoas que enfrentam sofrimento emocional, dificuldades nos relacionamentos,
-            ansiedade, instabilidade afetiva, sobrecarga mental, baixa autoestima e desafios na organização da vida pessoal e profissional.
+            O acompanhamento psicológico é um processo de cuidado com a mente, com as emoções e com a forma como cada pessoa enfrenta
+            os desafios da vida. No consultório, a proposta não é oferecer frases prontas de internet nem alquimia motivacional de bolso,
+            mas construir, com técnica e sensibilidade, caminhos reais de autoconhecimento, reorganização emocional e mudança.
           </p>
           <p>
-            A proposta do atendimento é oferecer um ambiente ético, reservado e respeitoso, no qual cada história seja acolhida com atenção,
-            responsabilidade técnica e cuidado humano.
+            Danilo Souza atua com foco clínico, escuta qualificada e compromisso com a singularidade de cada paciente,
+            respeitando sua história, seu tempo e suas necessidades terapêuticas.
           </p>
         </div>
-        <aside class="info-card">
-          <h3>Informações profissionais</h3>
-          <ul>
-            <li><strong>Nome:</strong> Danilo Matheus Fonseca de Souza</li>
-            <li><strong>Profissão:</strong> Psicólogo clínico</li>
-            <li><strong>Registro:</strong> CRP-10/11505</li>
-            <li><strong>Cidade:</strong> Belém do Pará</li>
-            <li><strong>Modalidade:</strong> Atendimento on-line e presencial</li>
-            <li><strong>Pós:</strong> Transtorno do Espectro Autista (TEA) e Transtornos Globais do Desenvolvimento (TGD)</li>
-            <li><strong>Pós:</strong> ABA - Análise Comportamental Aplicada ao Autismo</li>
+        <div class="info-panel">
+          <h3>Formação complementar</h3>
+          <ul class="check-list">
+            <li>Pós-graduação em Transtorno do Espectro Autista (TEA) e Transtornos Globais do Desenvolvimento (TGD)</li>
+            <li>Pós-graduação em ABA — Análise Comportamental Aplicada ao Autismo</li>
+            <li>Atendimento psicológico on-line e presencial</li>
+            <li>Foco em cuidado clínico com abordagem estruturada e humanizada</li>
           </ul>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section muted" id="abordagem">
-      <div class="container two-columns reverse">
-        <div class="image-panel">
-          <img src="assets/card-back.jpeg" alt="Identidade visual do consultório Danilo Souza" />
-        </div>
-        <div>
-          <span class="section-tag">Abordagem terapêutica</span>
-          <h2>Terapia Cognitivo-Comportamental com foco em entendimento prático e transformação gradual.</h2>
-          <p>
-            A Terapia Cognitivo-Comportamental, conhecida como TCC, trabalha a relação entre pensamentos, emoções e atitudes.
-            É uma abordagem bastante utilizada para ajudar o paciente a identificar padrões que alimentam sofrimento psíquico,
-            desenvolver estratégias de enfrentamento e construir respostas mais saudáveis diante dos desafios do cotidiano.
-          </p>
-          <p>
-            O processo terapêutico exige compromisso, continuidade e abertura para reflexão. Quando bem conduzido,
-            favorece mudanças consistentes na forma de sentir, pensar e agir.
-          </p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="temas">
+    <section class="section alt" id="especialidades">
       <div class="container">
-        <span class="section-tag center">Principais temas trabalhados</span>
-        <h2 class="center">Demandas psicológicas que podem ser acompanhadas no processo terapêutico.</h2>
+        <div class="section-head">
+          <span class="section-tag">Especialidades e áreas de atuação</span>
+          <h2>Atuação clínica com destaque para dependência química, TCC e desenvolvimento humano.</h2>
+        </div>
 
         <div class="cards-grid">
-          <article class="topic-card">
-            <h3>Ansiedade e sobrecarga emocional</h3>
-            <p>Compreensão de sintomas, gatilhos, ruminações e construção de estratégias para lidar com a tensão constante.</p>
+          <article class="card featured">
+            <span class="card-kicker">Destaque principal</span>
+            <h3>Tratamento psicológico para dependência química</h3>
+            <p>
+              A dependência química é uma condição complexa que afeta o corpo, o funcionamento emocional, os vínculos sociais
+              e a própria percepção de futuro. Nesse cenário, o acompanhamento psicológico é peça central no processo de recuperação.
+            </p>
+            <p>
+              Na psicoterapia, o paciente pode identificar gatilhos emocionais e comportamentais, compreender padrões de uso,
+              fortalecer a motivação para a mudança, reconstruir a autoestima e desenvolver habilidades para lidar com frustrações,
+              conflitos, recaídas e situações de risco sem recorrer às substâncias.
+            </p>
+            <p>
+              O trabalho também pode envolver orientação familiar, grupos terapêuticos, psicoeducação e suporte no período pós-tratamento,
+              favorecendo reinserção social, autonomia e novos projetos de vida.
+            </p>
           </article>
-          <article class="topic-card">
-            <h3>Transtorno Borderline</h3>
-            <p>Acompanhamento voltado para regulação emocional, relações interpessoais e reconhecimento de padrões de impulsividade e sofrimento.</p>
+
+          <article class="card">
+            <h3>Terapia Cognitivo-Comportamental (TCC)</h3>
+            <p>
+              Abordagem focada na relação entre pensamentos, emoções e comportamentos, ajudando o paciente a reconhecer padrões disfuncionais
+              e a construir respostas mais saudáveis para o cotidiano.
+            </p>
           </article>
-          <article class="topic-card">
-            <h3>Autoestima e autoconhecimento</h3>
-            <p>Desenvolvimento de uma percepção mais saudável sobre si, seus limites, valores, capacidades e necessidades.</p>
+
+          <article class="card">
+            <h3>TEA, TGD e desenvolvimento</h3>
+            <p>
+              Atendimento com base em formação complementar voltada ao Transtorno do Espectro Autista (TEA), Transtornos Globais do Desenvolvimento
+              (TGD) e estratégias de intervenção alinhadas à análise do comportamento.
+            </p>
           </article>
-          <article class="topic-card">
-            <h3>Relacionamentos e vínculos</h3>
-            <p>Reflexão sobre conflitos afetivos, comunicação, dependência emocional, frustrações e construção de relações mais equilibradas.</p>
+
+          <article class="card">
+            <h3>Análise Comportamental Aplicada (ABA)</h3>
+            <p>
+              Recursos técnicos para compreensão de comportamentos, aquisição de habilidades, adaptação funcional e construção de intervenções
+              terapêuticas mais organizadas e consistentes.
+            </p>
           </article>
-          <article class="topic-card">
-            <h3>Organização da vida e performance</h3>
-            <p>Trabalho terapêutico para ampliar clareza mental, tomada de decisão, foco e manejo das pressões do cotidiano.</p>
+
+          <article class="card">
+            <h3>Ansiedade, autoestima e regulação emocional</h3>
+            <p>
+              A psicoterapia auxilia no entendimento de sintomas, no manejo da ansiedade, na organização interna e no fortalecimento da autonomia
+              emocional diante das exigências da vida contemporânea.
+            </p>
           </article>
-          <article class="topic-card">
-            <h3>Comportamentos disfuncionais</h3>
-            <p>Identificação de hábitos e respostas emocionais que mantêm sofrimento, com busca por alternativas mais adaptativas.</p>
+
+          <article class="card">
+            <h3>Acompanhamento individual e familiar</h3>
+            <p>
+              Em muitos contextos, a família é parte importante do cuidado. O trabalho psicológico pode incluir orientação, escuta e intervenções
+              que fortaleçam a rede de apoio do paciente.
+            </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section muted" id="beneficios">
-      <div class="container">
-        <span class="section-tag center">Por que buscar psicoterapia?</span>
-        <h2 class="center">A psicologia pode ajudar a construir mais consciência, estabilidade emocional e qualidade nas relações.</h2>
-        <div class="benefits-grid">
-          <div class="benefit-box">
-            <h3>Escuta técnica e acolhedora</h3>
-            <p>Um espaço de fala sem julgamento, com atenção à singularidade de cada pessoa.</p>
-          </div>
-          <div class="benefit-box">
-            <h3>Mais clareza emocional</h3>
-            <p>Entendimento mais preciso sobre pensamentos, sentimentos, reações e conflitos internos.</p>
-          </div>
-          <div class="benefit-box">
-            <h3>Melhor manejo do cotidiano</h3>
-            <p>Ferramentas para lidar com estresse, relações difíceis, cobranças e momentos de transição.</p>
-          </div>
-          <div class="benefit-box">
-            <h3>Desenvolvimento pessoal</h3>
-            <p>Fortalecimento da autonomia, do senso de identidade e da capacidade de fazer escolhas mais conscientes.</p>
-          </div>
+    <section class="section" id="abordagem">
+      <div class="container two-col">
+        <div>
+          <span class="section-tag">Como funciona</span>
+          <h2>Psicologia clínica com método, vínculo e responsabilidade.</h2>
+          <p>
+            O processo terapêutico começa pela escuta da história do paciente, pela compreensão da demanda atual e pela análise dos fatores que
+            influenciam seu sofrimento. A partir disso, o acompanhamento é estruturado com metas possíveis, estratégias de cuidado e revisão constante
+            do progresso terapêutico.
+          </p>
+          <p>
+            O objetivo da psicoterapia não é apagar a complexidade humana com frases prontas. É ajudar a pessoa a compreender o que sente,
+            elaborar conflitos, desenvolver recursos emocionais e retomar a capacidade de conduzir a própria vida com mais consciência.
+          </p>
+        </div>
+        <div class="steps">
+          <div class="step"><strong>1.</strong><span>Acolhimento inicial e compreensão da demanda.</span></div>
+          <div class="step"><strong>2.</strong><span>Avaliação clínica e definição dos objetivos terapêuticos.</span></div>
+          <div class="step"><strong>3.</strong><span>Construção de estratégias práticas de cuidado e acompanhamento.</span></div>
+          <div class="step"><strong>4.</strong><span>Fortalecimento de autonomia, prevenção de recaídas e qualidade de vida.</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="dependencia">
+    <section class="section alt" id="artigos">
       <div class="container">
-        <span class="section-tag">Atendimento especializado</span>
-        <h2>Dependência química em meio à psicoterapia</h2>
-        <div class="info-card long-copy">
-          <p>A dependência química é uma condição complexa que afeta não apenas o corpo, mas também o funcionamento psicológico, emocional e social do indivíduo. Nesse contexto, o trabalho do psicólogo dentro do processo de tratamento e internação torna-se fundamental para promover a recuperação e a reinserção saudável do paciente na sociedade.</p>
-          <p>Durante o período de internação, o psicólogo atua na avaliação psicológica do paciente, buscando compreender sua história de vida, os fatores que contribuíram para o desenvolvimento da dependência e os possíveis transtornos associados, como ansiedade, depressão ou traumas. Esse olhar aprofundado permite elaborar estratégias terapêuticas adequadas para cada pessoa, considerando sua singularidade.</p>
-          <p>A psicoterapia é uma das principais ferramentas utilizadas nesse processo. Por meio das sessões terapêuticas, o paciente é incentivado a reconhecer os gatilhos emocionais e comportamentais que o levam ao uso de substâncias, além de desenvolver habilidades para lidar com frustrações, conflitos e situações de risco sem recorrer às drogas. Nesse espaço de escuta e acolhimento, o indivíduo também pode reconstruir sua autoestima, fortalecer sua identidade e ressignificar experiências difíceis.</p>
-          <p>Outro aspecto importante do trabalho do psicólogo é o fortalecimento da motivação para a mudança. A dependência química frequentemente envolve ambivalência, ou seja, o desejo de parar de usar substâncias ao mesmo tempo em que existe dificuldade em abandonar o comportamento. O psicólogo auxilia o paciente a compreender esse processo, estimulando a autonomia e o comprometimento com a própria recuperação.</p>
-          <p>Além do atendimento individual, o psicólogo pode atuar em grupos terapêuticos, atividades psicoeducativas e intervenções com a família. A participação familiar é essencial, pois a dependência química impacta todo o sistema familiar. Ao orientar familiares, o psicólogo contribui para a construção de uma rede de apoio mais saudável e preparada para acompanhar o processo de recuperação.</p>
-          <p>Quando o paciente se aproxima da alta e do retorno à sociedade, o trabalho psicológico torna-se ainda mais importante. Nesse momento, a psicoterapia ajuda o indivíduo a se preparar para enfrentar os desafios do cotidiano, como pressão social, estresse, conflitos familiares e possíveis recaídas. O acompanhamento psicológico no pós-tratamento auxilia na manutenção da abstinência e no desenvolvimento de novos projetos de vida.</p>
-          <p>Dessa forma, o psicólogo desempenha um papel essencial no tratamento da dependência química. Sua atuação vai além da redução do uso de substâncias: envolve promover autoconhecimento, fortalecer recursos emocionais e favorecer a reconstrução de vínculos sociais. Por meio da psicoterapia, o indivíduo encontra suporte para reorganizar sua vida e retomar seu lugar na sociedade com mais autonomia, consciência e qualidade de vida.</p>
+        <div class="section-head">
+          <span class="section-tag">Conteúdo e orientação</span>
+          <h2>Artigos de psicologia para informar, orientar e fortalecer a busca por cuidado.</h2>
+          <p>
+            Esta área ajuda o site a responder dúvidas frequentes de pacientes e também melhora o posicionamento para buscas como
+            “psicólogo em Belém do Pará”, “tratamento psicológico para dependência química” e “terapia para ansiedade em Belém”.
+          </p>
+        </div>
+
+        <div class="article-grid">
+          <article class="article-card">
+            <span class="card-kicker">Artigo 1</span>
+            <h3>Quando procurar um psicólogo em Belém do Pará?</h3>
+            <p>
+              Procurar ajuda psicológica não é sinal de fraqueza. Muitas pessoas buscam atendimento quando percebem sofrimento persistente,
+              ansiedade intensa, dificuldades de relacionamento, esgotamento emocional, luto, baixa autoestima ou sensação de perda de direção.
+            </p>
+            <p>
+              O acompanhamento com um psicólogo em Belém do Pará pode oferecer um espaço seguro para compreender o que está acontecendo,
+              organizar emoções, fortalecer recursos internos e construir respostas mais saudáveis para o cotidiano.
+            </p>
+          </article>
+
+          <article class="article-card">
+            <span class="card-kicker">Artigo 2</span>
+            <h3>Como a psicoterapia ajuda no tratamento da dependência química?</h3>
+            <p>
+              A psicoterapia é uma ferramenta essencial no tratamento da dependência química porque ajuda o paciente a reconhecer gatilhos,
+              padrões emocionais, contextos de risco e conflitos internos ligados ao uso de substâncias. Também contribui para a reconstrução
+              da autoestima, o fortalecimento da motivação para a mudança e a prevenção de recaídas.
+            </p>
+            <p>
+              Em muitos casos, o acompanhamento psicológico inclui trabalho com a família, psicoeducação e estratégias para reinserção social,
+              tornando o processo de recuperação mais consistente e humano.
+            </p>
+          </article>
+
+          <article class="article-card">
+            <span class="card-kicker">Artigo 3</span>
+            <h3>TCC, ansiedade e rotina: o que muda com o acompanhamento terapêutico?</h3>
+            <p>
+              A Terapia Cognitivo-Comportamental ajuda a identificar pensamentos automáticos, crenças rígidas e comportamentos que mantêm o sofrimento.
+              Com esse trabalho, o paciente aprende a observar padrões, testar novas respostas e desenvolver uma rotina com mais clareza, regulação emocional
+              e autonomia.
+            </p>
+            <p>
+              Para quem enfrenta ansiedade, autocobrança excessiva ou dificuldade em lidar com pressões diárias, a TCC oferece estratégias práticas
+              e clinicamente estruturadas para o cuidado psicológico.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="enderecos">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Atendimento presencial</span>
+          <h2>Dois locais de atendimento em Belém do Pará.</h2>
+        </div>
+
+        <div class="address-grid">
+          <article class="address-card">
+            <h3>Unidade Marco</h3>
+            <p>Tv. Barão do Triunfo, 3540A - Marco</p>
+            <p>Ed. Infinity Corp. 11º andar, sala 1115</p>
+            <p>Mind Center - fim do corredor</p>
+          </article>
+
+          <article class="address-card">
+            <h3>Unidade Nazaré</h3>
+            <p>Av. Comandante Brás de Aguiar, 936</p>
+            <p>Alameda Dr. Feliciano Mendonça, casa 2 e 4 - sala</p>
+            <p>Bairro do Nazaré</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section" id="contato">
-      <div class="container contact-layout">
+      <div class="container contact-wrap">
         <div>
           <span class="section-tag">Contato</span>
-          <h2>Agende seu atendimento.</h2>
+          <h2>Agendamento e informações</h2>
           <p>
-            Para informações sobre disponibilidade, formato de atendimento e primeiro contato, utilize os canais abaixo.
+            Para agendar atendimento, esclarecer dúvidas ou solicitar mais informações sobre o acompanhamento psicológico, entre em contato pelos canais abaixo.
           </p>
-
-          <div class="contact-list">
-            <a href="https://wa.me/5591984864748" target="_blank" rel="noopener noreferrer">WhatsApp: (91) 98486-4748</a>
-            <a href="mailto:Danilosouzapsi@gmail.com">E-mail: Danilosouzapsi@gmail.com</a>
-            <a href="https://www.instagram.com/Danilo_souzac_x" target="_blank" rel="noopener noreferrer">Instagram: @Danilo_souzac_x</a>
-            <span>Atendimento on-line e presencial</span>
-            <span>Marco: Tv. Barão do Triunfo, 3540A - Ed. Infinity Corp., 11º andar, sala 1115 - Mind Center (fim do corredor)</span>
-            <span>Nazaré: Av. Comandante Brás de Aguiar, 936 - Alameda Dr. Feliciano Mendonça, casa 2 e 4, sala</span>
-          </div>
         </div>
 
         <div class="contact-card">
-          <img src="assets/card-wide.jpeg" alt="Cartão horizontal Danilo Souza" />
+          <a class="contact-cta" href="https://wa.me/5591984864748?text=Olá%2C%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">
+            <span>WhatsApp</span>
+            <strong>(91) 98486-4748</strong>
+          </a>
+          <a class="contact-link" href="mailto:Danilosouzapsi@gmail.com">Danilosouzapsi@gmail.com</a>
+          <a class="contact-link" href="https://instagram.com/danilo_souzac_x" target="_blank" rel="noopener noreferrer">@danilo_souzac_x</a>
+          <p class="contact-note">Atendimento on-line e presencial em Belém do Pará.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-content">
+  <a class="floating-whatsapp" href="https://wa.me/5591984864748?text=Olá%2C%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+    <span>Agendar no WhatsApp</span>
+  </a>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
       <div>
-        <strong>Danilo Souza Psicólogo</strong>
-        <p>Atendimento clínico com seriedade, ética e acolhimento.</p>
+        <strong>Danilo Souza</strong>
+        <p>Psicólogo Clínico • CRP-10/11505</p>
       </div>
-      <div>
-        <p>Belém do Pará • CRP-10/11505</p>
-        <p>© <span id="year"></span> Todos os direitos reservados.</p>
-      </div>
+      <p>© <span id="year"></span> Danilo Souza. Todos os direitos reservados.</p>
     </div>
   </footer>
 
