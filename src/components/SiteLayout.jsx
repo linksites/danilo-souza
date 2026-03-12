@@ -20,13 +20,15 @@ function navClass({ isActive }) {
 }
 
 export default function SiteLayout({ children }) {
+  const logoSrc = `${import.meta.env.BASE_URL}assets/logo-danilo-souza.jpg`;
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-100">
       <header className="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
         <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4">
           <NavLink to="/" className="flex items-center gap-3">
             <img
-              src="/assets/logo-danilo-souza.jpg"
+              src={logoSrc}
               alt="Logo Danilo Souza"
               className="h-12 w-12 rounded-xl object-cover ring-2 ring-brand-600/40"
             />

@@ -12,6 +12,8 @@ const principles = [
 ];
 
 export default function ProfilePage() {
+  const profileImageSrc = `${import.meta.env.BASE_URL}assets/Dr.Danilo-Souza.jpg`;
+
   return (
     <section className="space-y-8">
       <header className="space-y-3">
@@ -26,7 +28,7 @@ export default function ProfilePage() {
       <div className="grid gap-6 lg:grid-cols-[360px_1fr]">
         <article className="rounded-2xl border border-slate-800 bg-slate-900 p-4">
           <img
-            src="/assets/Dr.Danilo-Souza.jpg"
+            src={profileImageSrc}
             alt="Dr. Danilo Souza"
             className="h-full w-full rounded-xl object-cover"
           />
