@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 const menu = [
   { label: "Início", to: "/" },
@@ -20,7 +21,13 @@ function navClass({ isActive }) {
 }
 
 export default function SiteLayout({ children }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
   const logoSrc = `${import.meta.env.BASE_URL}assets/logo-danilo-souza.jpg`;
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location.pathname]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-100">
@@ -37,12 +44,63 @@ export default function SiteLayout({ children }) {
               <p className="text-base font-bold">Psicólogo Clínico</p>
             </div>
           </NavLink>
-          <nav className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-nav"
+            aria-label="Abrir menu de navegação"
+            className="group relative grid h-11 w-11 place-items-center rounded-xl border border-slate-700 bg-slate-900 md:hidden"
+          >
+            <span
+              className={`absolute block h-0.5 w-5 rounded bg-slate-100 transition ${
+                isMenuOpen ? "translate-y-0 rotate-45" : "-translate-y-1.5"
+              }`}
+            />
+            <span
+              className={`absolute block h-0.5 w-5 rounded bg-slate-100 transition ${
+                isMenuOpen ? "opacity-0" : "opacity-100"
+              }`}
+            />
+            <span
+              className={`absolute block h-0.5 w-5 rounded bg-slate-100 transition ${
+                isMenuOpen ? "translate-y-0 -rotate-45" : "translate-y-1.5"
+              }`}
+            />
+          </button>
+
+          <nav className="hidden flex-wrap gap-2 md:flex">
             {menu.map((item) => (
               <NavLink key={item.to} to={item.to} className={navClass}>
                 {item.label}
               </NavLink>
             ))}
+          </nav>
+        </div>
+
+        <div
+          className={`md:hidden ${isMenuOpen ? "pointer-events-auto" : "pointer-events-none"} fixed inset-0 z-30`}
+          aria-hidden={!isMenuOpen}
+        >
+          <button
+            type="button"
+            aria-label="Fechar menu"
+            onClick={() => setIsMenuOpen(false)}
+            className={`absolute inset-0 bg-black/50 transition ${isMenuOpen ? "opacity-100" : "opacity-0"}`}
+          />
+          <nav
+            id="mobile-nav"
+            className={`absolute right-4 top-[84px] w-[min(88vw,320px)] rounded-2xl border border-slate-700 bg-slate-900/95 p-3 shadow-2xl shadow-black/40 transition ${
+              isMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-2 opacity-0"
+            }`}
+          >
+            <div className="flex flex-col gap-1">
+              {menu.map((item) => (
+                <NavLink key={item.to} to={item.to} className={navClass}>
+                  {item.label}
+                </NavLink>
+              ))}
+            </div>
           </nav>
         </div>
       </header>
