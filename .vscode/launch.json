@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Frontend React (localhost)",
+      "url": "http://127.0.0.1:5173",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "Vite dev server"
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Go Live (dist)",
+      "url": "http://127.0.0.1:5510",
+      "webRoot": "${workspaceFolder}/dist",
+      "preLaunchTask": "Build watch (Go Live)"
+    }
+  ]
+}

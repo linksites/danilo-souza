@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build watch (Go Live)",
+      "type": "npm",
+      "script": "build:watch",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": {
+          "regexp": "^(.*)$",
+          "message": 1
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "building client environment for production",
+          "endsPattern": "built in"
+        }
+      }
+    },
+    {
+      "label": "Vite dev server",
+      "type": "npm",
+      "script": "dev:local",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": {
+          "regexp": "^(.*)$",
+          "message": 1
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "vite v",
+          "endsPattern": "Local:\\s+http://127\\.0\\.0\\.1:5173/?"
+        }
+      }
+    }
+  ]
+}
