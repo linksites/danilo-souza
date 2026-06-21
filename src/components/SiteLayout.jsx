@@ -21,7 +21,7 @@ function navClass(isActive) {
 
 function navIndicator(isActive) {
   return isActive ? (
-    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-brand-400 via-accent-400 to-success-400 rounded-full" />
+    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-500 rounded-full" />
   ) : null;
 }
 
