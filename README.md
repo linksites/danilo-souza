@@ -5,7 +5,6 @@ Site institucional do psicólogo clínico Danilo Souza, desenvolvido com React, 
 ## Tecnologias
 
 - React 18
-- React Router DOM 6
 - Vite 8
 - Tailwind CSS 3
 
@@ -46,29 +45,22 @@ src/
     SiteLayout.jsx
   pages/
     HomePage.jsx
-    ProfilePage.jsx
-    SpecialtiesPage.jsx
-    ApproachPage.jsx
-    ArticlesPage.jsx
-    FaqPage.jsx
-    LocationsPage.jsx
-    ContactPage.jsx
   App.jsx
   main.jsx
 ```
 
-## Rotas
+## Seções
 
-- `/` - Início
-- `/perfil-profissional`
-- `/especialidades`
-- `/abordagem`
-- `/artigos`
-- `/faq`
-- `/enderecos`
-- `/contato`
+A aplicação é uma página única (one-page) com navegação por âncoras dentro de `HomePage.jsx`:
 
-Observação: a aplicação usa `HashRouter`.
+- `#inicio` - Início
+- `#perfil` - Perfil Profissional
+- `#especialidades` - Especialidades
+- `#abordagem` - Abordagem
+- `#artigos` - Artigos
+- `#faq` - FAQ
+- `#enderecos` - Endereços
+- `#contato` - Contato
 
 ## Deploy
 
@@ -76,7 +68,7 @@ O deploy é automático no GitHub Pages via workflow em `.github/workflows/deplo
 
 Gatilhos:
 
-- Push na branch `main`
+- Push na branch `master`
 - Execução manual (`workflow_dispatch`)
 
 Fluxo:
